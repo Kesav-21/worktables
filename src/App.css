@@ -42,9 +42,6 @@ main {
   bottom:-20px;
 }
 
-#one:hover{
-  background-color:black;
-}
 
 .tooltip-text {
   visibility: hidden;
