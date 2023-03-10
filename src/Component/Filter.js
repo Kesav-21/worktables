@@ -10,9 +10,9 @@ class Filter extends Component{
     
     render(){
         return(
-            <div>
-                <div>
+            <div className="filters-input">
                 <h4>Teams</h4>
+                <div>
                 <input type="checkbox" name="table1" onChange={this.props.handleFilter}/>Team1
                 <input type="checkbox" name="table2" onChange={this.props.handleFilter}/>Team2
                 <input type="checkbox" name="table3" onChange={this.props.handleFilter}/>Team3

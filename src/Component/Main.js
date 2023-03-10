@@ -1,7 +1,6 @@
 import React from "react";
 import details from "../data/details";
 import Filter from "./Filter";
-import Checkbox from "./Filter";
 import Search from "./Search";
 import TopCircle from "./TopCircle";
 
@@ -60,18 +59,24 @@ class Main extends React.Component{
       }
     render(){
       return(
-        <div className="container-card">
+        <div className="main-container">
+          <div className="filter-section">
           <Search details={details}/>
           <Filter handleFilter={this.handleFilter}/>
+          </div>
         <div className="container">
         <div className="rect">
+          <p>Team 1</p>
           <div className="circle-container">
+            
           {this.state.table1.map(elem=>{return(
             <TopCircle id={elem.id} name={elem.name} position={elem.position} team={elem.team} project={elem.project} class={elem.class}/>
           )})}
+          
           </div>
           </div>
           <div className="rect">
+          <p>Team 2</p>
           <div className="circle-container">
           {this.state.table2.map(elem=>{return(
             <TopCircle id={elem.id} name={elem.name} position={elem.position} team={elem.team} project={elem.project} class={elem.class}/>
@@ -79,6 +84,7 @@ class Main extends React.Component{
           </div>
           </div>
           <div className="rect">
+          <p>Team 3</p>
           <div className="circle-container">
           {this.state.table3.map(elem=>{return(
             <TopCircle id={elem.id} name={elem.name} position={elem.position} team={elem.team} project={elem.project} class={elem.class}/>
@@ -86,6 +92,7 @@ class Main extends React.Component{
           </div>
           </div>
           <div className="rect">
+          <p>Team 4</p>
           <div className="circle-container">
           {this.state.table4.map(elem=>{return(
             <TopCircle id={elem.id} name={elem.name} position={elem.position} team={elem.team} project={elem.project} class={elem.class}/>
@@ -93,6 +100,7 @@ class Main extends React.Component{
           </div>
           </div>
           <div className="rect">
+          <p>Team 5</p>
           <div className="circle-container">
           {this.state.table5.map(elem=>{return(
             <TopCircle id={elem.id} name={elem.name} position={elem.position} team={elem.team} project={elem.project} class={elem.class}/>
@@ -100,6 +108,7 @@ class Main extends React.Component{
           </div>
           </div>
           <div className="rect">
+          <p>Team 6</p>
           <div className="circle-container">
           {this.state.table6.map(elem=>{return(
             <TopCircle id={elem.id} name={elem.name} position={elem.position} team={elem.team} project={elem.project} class={elem.class}/>
