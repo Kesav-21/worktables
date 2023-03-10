@@ -47,7 +47,8 @@ header{
   position: absolute;
   padding:5px;
   margin:25px 40%;
-  background-color: blue;
+  font-weight: 500;
+  font-size: large;
 }
 .circle-container{
   display:grid;
