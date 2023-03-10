@@ -3,7 +3,8 @@ main {
   vertical-align: center;
 }
 .container-card{
-  width:50%;
+  width:60%;
+  min-height: 200px;
   margin: 0 auto;
 }
 .container{
@@ -12,7 +13,7 @@ main {
   z-index:1;
   row-gap:50px;
   column-gap: 50px;
-  margin-top:100px;
+  margin-top:100px;  
 }
 .rect{
   background-color:red;
@@ -21,7 +22,7 @@ main {
 .circle-container{
   display:grid;
   grid-template-columns: 50% 50%;
-  justify-items:center;
+  place-items: center;
   row-gap: 10px;
 }
 .top-circle{
@@ -87,4 +88,8 @@ main {
   display: inline-block;
   font-family: Arial;
   text-align: center;
+}
+
+#search{
+  display: none;
 }
